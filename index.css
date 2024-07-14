@@ -1,0 +1,46 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+#sidebar {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    background: #333;
+    color: white;
+    padding: 15px;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    cursor: pointer;
+}
+
+#main-content {
+    margin-left: 200px;
+    transition: margin-left 0.5s;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+#main-content.expanded {
+    margin-left: 300px;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
